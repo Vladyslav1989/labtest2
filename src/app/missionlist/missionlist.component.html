@@ -1,0 +1,17 @@
+
+
+<div class="row mt-5">
+  <div class="col-md-4 mb-3" *ngFor="let event of dataT">
+    <div class="card text-center">
+      <div class="card-body">
+        <h5 class="card-title">{{event.mission_name}}</h5>
+        <p class="card-text">{{event.launch_year}}</p>
+        <p class="card-text">{{event.details}}</p>
+        <button mat-fab color="Basic"><a [routerLink]="['/missiondetails', event.flight_number]">Details</a></button>
+      </div>
+      <div class="card-footer text-muted">
+        <img [src]="event.links.mission_patch_small"/>
+      </div>
+    </div>
+  </div>
+</div>

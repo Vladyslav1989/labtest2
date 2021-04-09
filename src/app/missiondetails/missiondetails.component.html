@@ -1,0 +1,41 @@
+<p>SpaseX Mission Details</p>
+<div class="card" style="width: 18rem;">
+<div class="card-body" style="background-color:burlywood;">
+<strong><p style="color: crimson;"> Mission - {{UserDtails.mission_name}}</p></strong>
+<p> Name: {{UserDtails.mission_name}}</p>
+<p> Launch Year: {{UserDtails.launch_year}}</p>
+<p> Launch Number: {{UserDtails.flight_number}}</p>
+<strong><p style="color: crimson;"> Rocket </p></strong>
+<p> Name: {{UserDtails.rocket.rocket_name}}</p>
+<p> Type: {{UserDtails.rocket.rocket_type}}</p>
+<strong><p style="color: crimson;"> Launch Site </p></strong>
+<p> Type: {{UserDtails.launch_site.site_name}}</p>
+<p> <img [src]="UserDtails.links.mission_patch_small"/></p>
+<strong><p style="color: crimson;"> Launch Details </p></strong>
+<p> {{UserDtails.details}}</p>
+<strong><p style="color: crimson;"> More Info on Launch Details </p></strong>
+<a href={{UserDtails.links.wikipedia}}>Info</a>&nbsp;&nbsp;<a href={{UserDtails.links.video_link}}>Video</a>
+<div class="example-button-row">
+  <button mat-icon-button aria-label="Example icon-button with a heart icon">
+    <mat-icon>favorite</mat-icon>
+  </button>
+  <button mat-icon-button color="primary" aria-label="Example icon-button with a heart icon">
+    <mat-icon>favorite</mat-icon>
+  </button>
+  <button mat-icon-button color="accent" aria-label="Example icon-button with a heart icon">
+    <mat-icon>favorite</mat-icon>
+  </button>
+  <button mat-icon-button color="warn" aria-label="Example icon-button with a heart icon">
+    <mat-icon>favorite</mat-icon>
+  </button>
+  <button mat-icon-button disabled aria-label="Example icon-button with a heart icon">
+    <mat-icon>favorite</mat-icon>
+  </button>
+</div>
+</div>
+</div>
+
+
+
+
+
